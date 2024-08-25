@@ -15,3 +15,20 @@ describe('Character name validation', () => {
         }).not.toThrow();
     });
 });
+
+describe('Character type validation', () => {
+    const invalidTypes = ['Sorcerer', 'Ninja'];
+    const validTypes = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
+
+    test.each(invalidTypes)('should not throw an error for a valid type', (type) => {
+        expect(() => {
+            new Character('Robin', type);
+        }).toThrow();
+    });
+
+    test.each(validTypes)('should not throw an error for a valid type', (type) => {
+        expect(() => {
+            new Character('Robin', type);
+        }).not.toThrow();
+    });
+});
