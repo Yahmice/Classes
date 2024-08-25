@@ -1,5 +1,11 @@
-import Character from '.Character.js';
+import Character from './Character.js';
 
-const Daemon = new Character('Daemon', 'Daemon', 100, 1, 10, 40);
+class Daemon extends Character{
+	constructor(name){
+		super(name, 'Daemon');
+		this.attack = 10;
+		this.defence = 40;
+	}
+}
 
 export default Daemon;

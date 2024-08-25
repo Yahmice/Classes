@@ -1,5 +1,11 @@
-import Character from '.Character.js';
+import Character from './Character.js';
 
-const Bowerman = new Character('Bowerman', 'Bowman', 100, 1, 25, 25);
+class Bowerman extends Character{
+	constructor(name){
+		super(name, 'Bowman');
+		this.attack = 25;
+		this.defence = 25;
+	}
+}
 
 export default Bowerman;

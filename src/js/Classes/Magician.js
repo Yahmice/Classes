@@ -1,5 +1,11 @@
-import Character from '.Character.js';
+import Character from './Character.js';
 
-const Magician = new Character('Magician', 'Magician', 100, 1, 10, 40);
+class Magician extends Character{
+	constructor(name){
+		super(name, 'Magician');
+		this.attack = 10;
+		this.defence = 40;
+	}
+}
 
 export default Magician;

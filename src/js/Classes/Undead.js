@@ -1,5 +1,11 @@
 import Character from './Character.js';
 
-const Undead = new Character('Undead', 'Undead', 100, 1, 25, 25);
+class Undead extends Character{
+	constructor(name){
+		super(name, 'Undead');
+		this.attack = 25;
+		this.defence = 25;
+	}
+}
 
 export default Undead;

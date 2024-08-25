@@ -1,13 +1,24 @@
-import Bowerman from './Classes/Bowerman';
-import Daemon from './Classes/Daemon';
-import Magician from './Classes/Magician';
-import Swordsman from './Classes/Swordsman';
-import Undead from './Classes/Undead';
-import Zombie from './Classes/Zombie';
+import Bowerman from './Classes/Bowerman.js';
+import Daemon from './Classes/Daemon.js';
+import Magician from './Classes/Magician.js';
+import Swordsman from './Classes/Swordsman.js';
+import Undead from './Classes/Undead.js';
+import Zombie from './Classes/Zombie.js';
 
-console.log(Bowerman);
-console.log(Daemon);
-console.log(Magician);
-console.log(Swordsman);
-console.log(Undead);
-console.log(Zombie);
+const bowman = new Bowerman('Azazel');
+console.log(bowman);
+
+const daemon = new Daemon('Asta');
+console.log(daemon);
+
+const magician = new Magician('Julius');
+console.log(magician);
+
+const swordsman = new Swordsman('Yami');
+console.log(swordsman);
+
+const undead = new Undead('Griffith');
+console.log(undead);
+
+const zombie = new Zombie('Nero');
+console.log(zombie); 

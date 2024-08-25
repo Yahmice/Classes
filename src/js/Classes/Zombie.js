@@ -1,5 +1,11 @@
-import Character from '.Character.js';
+import Character from './Character.js';
 
-const Zombie = new Character('Zombie', 'Zombie', 100, 1, 40, 10);
+class Zombie extends Character{
+	constructor(name){
+		super(name, 'Zombie');
+		this.attack = 40;
+		this.defence = 10;
+	}
+}
 
 export default Zombie;
